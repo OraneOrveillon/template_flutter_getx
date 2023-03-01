@@ -1,7 +1,12 @@
 import 'package:get/get.dart';
 
+import '../routes/route_names.dart';
+
+// TODO renommer
 class Counter extends GetxController {
   var count = 0.obs;
 
-  increment() => count++;
+  void increment() => count++;
+
+  void onClick() => Get.toNamed(other);
 }

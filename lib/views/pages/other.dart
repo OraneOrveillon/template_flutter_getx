@@ -4,18 +4,22 @@ import 'package:get/get.dart';
 import '../../controllers/counter.dart';
 
 class Other extends StatelessWidget {
-  Other({super.key});
-
-  // You can ask Get to find a Controller that is being used by another page and redirect you to it.
-  final Counter controller = Get.find();
+  const Other({super.key});
 
   @override
   Widget build(context) {
     // Access the updated count variable
-    return Scaffold(
-      body: Center(
-        child: Text("${controller.count}"),
-      ),
+    // ? GetBuilder permet de récupérer le controller souhaité mais sans rendre
+    // ? l'interface réactive aux changements
+    return GetBuilder<Counter>(
+      builder: (controller) {
+        return Scaffold(
+          appBar: AppBar(),
+          body: Center(
+            child: Text("${controller.count}"),
+          ),
+        );
+      },
     );
   }
 }

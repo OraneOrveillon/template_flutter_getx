@@ -1,16 +1,4 @@
-# template_getx
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<!-- TODO transformer en architecture modulaire -->
+<!-- TODO appeler ce projet template flutter -->
+<!-- TODO faire une branche par template différent -->
+<!-- TODO mettre le readme uniquement sur le branche main qui explique la procédure à suivre pour utiliser le template (se mettre su la bonne banche et télécharger -->
