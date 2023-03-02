@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../controllers/counter.dart';
+import '../../controllers/home_controller.dart';
 
-class Other extends StatelessWidget {
-  const Other({super.key});
+class OtherPage extends StatelessWidget {
+  const OtherPage({super.key});
 
   @override
   Widget build(context) {
-    // Access the updated count variable
     // ? GetBuilder permet de récupérer le controller souhaité mais sans rendre
     // ? l'interface réactive aux changements
-    return GetBuilder<Counter>(
+    return GetBuilder<HomeController>(
       builder: (controller) {
         return Scaffold(
           appBar: AppBar(),
