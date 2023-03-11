@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../controllers/home_controller.dart';
+import '../../utils/texts.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -13,26 +14,18 @@ class HomePage extends StatelessWidget {
     return GetX<HomeController>(
       builder: (controller) {
         return Scaffold(
-          appBar: AppBar(title: Text("Count: ${controller.count}")),
+          appBar: AppBar(
+            title: Text(AppBarTexts.home(controller.count.value)),
+          ),
           body: Center(
             child: ElevatedButton(
-              child: const Text("Go to Other"),
+              child: const Text(ButtonTexts.toOther),
               onPressed: () => controller.onClick(),
             ),
           ),
-          floatingActionButton: Column(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              FloatingActionButton(
-                onPressed: () => controller.increment(),
-                child: const Icon(Icons.add),
-              ),
-              const SizedBox(height: 10),
-              FloatingActionButton(
-                onPressed: () => controller.decrement(),
-                child: const Icon(Icons.remove),
-              )
-            ],
+          floatingActionButton: FloatingActionButton(
+            onPressed: () => controller.increment(),
+            child: const Icon(Icons.add),
           ),
         );
       },

@@ -7,7 +7,5 @@ class HomeController extends GetxController {
 
   void increment() => count++;
 
-  void decrement() => count.value == 0 ? count : count--;
-
   void onClick() => Get.toNamed(other);
 }
