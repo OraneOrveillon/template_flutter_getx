@@ -30,7 +30,10 @@ class DogPage extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Image.network(dogController.dog.message),
+                      AspectRatio(
+                        aspectRatio: 4 / 5,
+                        child: Image.network(dogController.dog.message),
+                      ),
                       ElevatedButton(
                         onPressed: () async {
                           dogController.getApi();
