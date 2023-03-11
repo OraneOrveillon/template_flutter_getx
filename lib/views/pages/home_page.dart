@@ -19,7 +19,7 @@ class HomePage extends StatelessWidget {
           ),
           body: Center(
             child: ElevatedButton(
-              child: const Text(ButtonTexts.toOther),
+              child: const Text(ButtonTexts.toDog),
               onPressed: () => controller.onClick(),
             ),
           ),

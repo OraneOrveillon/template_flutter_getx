@@ -10,5 +10,6 @@
   <!-- TODO - Expliquer l'utilité des deux branche -->
   <!-- TODO - Expliquer comment est faite l'archi (éventuellement rajouter des diagrammes) -->
   <!-- TODO - Expliquer éventuellement les nommages -->
+  <!-- TODO - Lister les packages utilisés -->
 
-<!-- TODO rajouter implémentation d'api avec une api libre stable -->
+  <!-- TODO mettre à jour les commentaires (tout en anglais) -->

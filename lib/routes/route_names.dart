@@ -1,1 +1,1 @@
-const String other = "/other";
+const String dog = "/dog";
