@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'routes/bindings.dart';
-import 'routes/routes.dart';
-import 'views/pages/home_page.dart';
+import 'modules/home/home_binding.dart';
+import 'routes/pages.dart';
+import 'modules/home/home_page.dart';
+import 'utils/theme/themes.dart';
 
 void main() {
   runApp(
@@ -12,6 +13,8 @@ void main() {
       // ? Dépendance de la page d'accueil s'il y en a une
       initialBinding: HomeBinding(),
       getPages: pages,
+      theme: lightTheme,
+      darkTheme: darkTheme,
     ),
   );
 }

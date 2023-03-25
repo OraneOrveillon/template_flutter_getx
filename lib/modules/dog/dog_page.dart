@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../controllers/dog_controller.dart';
-import '../../controllers/home_controller.dart';
-import '../../utils/sizing.dart';
+import 'dog_controller.dart';
+import '../home/home_controller.dart';
+import '../../utils/paddings.dart';
 import '../../utils/texts.dart';
 
 class DogPage extends StatelessWidget {
