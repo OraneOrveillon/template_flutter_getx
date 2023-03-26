@@ -11,8 +11,7 @@ class DogPage extends StatelessWidget {
 
   @override
   Widget build(context) {
-    // ? GetBuilder permet de récupérer le controller souhaité mais sans rendre
-    // ? l'interface réactive aux changements
+    // ? GetBuilder => access the controller without adding reactivity.
     return GetBuilder<HomeController>(
       builder: (homeController) {
         return Scaffold(

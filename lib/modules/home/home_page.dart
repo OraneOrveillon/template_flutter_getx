@@ -9,8 +9,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(context) {
-    // ? Getx<Controller> permet à la fois de récupérer le controller souhaité
-    // ? et d'observer les changements de valeur pour mettre à jour l'interface
+    // ? GetX => access the controller and makes the interface reactive to its properties.
     return GetX<HomeController>(
       builder: (controller) {
         return Scaffold(

@@ -4,8 +4,8 @@ import '../modules/dog/dog_binding.dart';
 import '../modules/dog/dog_page.dart';
 import 'routes.dart';
 
-// ? Routes existantes, peuvent avoir des routes enfants
-// ? Pas besoin de spécifier la root
+// ? Existing routes.
+// ? No need to specify the root page.
 List<GetPage> pages = [
   GetPage(
     name: dog,

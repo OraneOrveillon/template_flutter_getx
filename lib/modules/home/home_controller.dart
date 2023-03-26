@@ -7,7 +7,5 @@ class HomeController extends GetxController {
 
   void increment() => count.value++;
 
-  void onClick() {
-    Get.toNamed(dog);
-  }
+  void onClick() => Get.toNamed(dog);
 }
