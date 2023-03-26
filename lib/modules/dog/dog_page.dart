@@ -13,15 +13,15 @@ class DogPage extends StatelessWidget {
   Widget build(context) {
     // ? GetBuilder => access the controller without adding reactivity.
     return GetBuilder<HomeController>(
-      builder: (homeController) {
+      builder: (cHome) {
         return Scaffold(
           appBar: AppBar(
-            title: Text(AppBarTexts.home(homeController.count.value)),
+            title: Text(AppBarTexts.home(cHome.count.value)),
           ),
           body: Center(
             child: GetX<DogController>(
-              builder: (dogController) {
-                if (dogController.isLoading.value) {
+              builder: (cDog) {
+                if (cDog.isLoading.value) {
                   return const Center(child: CircularProgressIndicator());
                 }
                 return Padding(
@@ -31,11 +31,11 @@ class DogPage extends StatelessWidget {
                     children: [
                       AspectRatio(
                         aspectRatio: 4 / 5,
-                        child: Image.network(dogController.dog.message),
+                        child: Image.network(cDog.dog.message),
                       ),
                       ElevatedButton(
                         onPressed: () async {
-                          dogController.getApi();
+                          cDog.getApi();
                         },
                         child: const Text(ButtonTexts.newDog),
                       ),

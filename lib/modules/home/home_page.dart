@@ -11,19 +11,19 @@ class HomePage extends StatelessWidget {
   Widget build(context) {
     // ? GetX => access the controller and makes the interface reactive to its properties.
     return GetX<HomeController>(
-      builder: (controller) {
+      builder: (cHome) {
         return Scaffold(
           appBar: AppBar(
-            title: Text(AppBarTexts.home(controller.count.value)),
+            title: Text(AppBarTexts.home(cHome.count.value)),
           ),
           body: Center(
             child: ElevatedButton(
               child: const Text(ButtonTexts.toDog),
-              onPressed: () => controller.onClick(),
+              onPressed: () => cHome.onClick(),
             ),
           ),
           floatingActionButton: FloatingActionButton(
-            onPressed: () => controller.increment(),
+            onPressed: () => cHome.increment(),
             child: const Icon(Icons.add),
           ),
         );
