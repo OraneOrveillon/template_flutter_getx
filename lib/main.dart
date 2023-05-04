@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'modules/home/home_binding.dart';
 import 'routes/pages.dart';
 import 'modules/home/home_page.dart';
-import 'utils/theme/themes.dart';
+import 'theme/themes.dart';
 
 void main() {
   runApp(
