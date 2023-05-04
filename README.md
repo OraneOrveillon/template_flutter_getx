@@ -32,12 +32,6 @@ Still improving. 🫡
     # Route names
     - routes.dart
   - /utils
-    # Theming part
-    - /theme
-      # Color constants
-      - colors.dart
-      # Custom themes (light and dark)
-      - themes.dart
     # Your enums if they exist
     - enums.dart
     # Padding constants used on screens
@@ -46,6 +40,11 @@ Still improving. 🫡
     - texts.dart
     # Form validators
     - validators.dart
+  - /theme
+    # Color constants
+    - colors.dart
+    # Custom themes (light and dark)
+    - themes.dart
   main.dart
 ```
 
