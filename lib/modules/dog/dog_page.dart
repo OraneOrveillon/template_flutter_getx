@@ -3,8 +3,8 @@ import 'package:get/get.dart';
 
 import 'dog_controller.dart';
 import '../home/home_controller.dart';
-import '../../utils/paddings.dart';
-import '../../utils/texts.dart';
+import '../../core/utils/paddings.dart';
+import '../../core/utils/texts.dart';
 
 class DogPage extends StatelessWidget {
   const DogPage({super.key});

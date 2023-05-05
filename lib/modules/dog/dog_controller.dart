@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 
-import 'dog_model.dart';
-import 'dog_repository.dart';
+import '../../data/models/dog_model.dart';
+import '../../data/services/dog_repository.dart';
 
 class DogController extends GetxController {
   late Dog dog;

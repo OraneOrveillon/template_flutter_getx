@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 
-import 'dog_model.dart';
+import '../models/dog_model.dart';
 
 abstract class DogRepository {
   static const String uri = "https://dog.ceo/api/breeds/image/random";

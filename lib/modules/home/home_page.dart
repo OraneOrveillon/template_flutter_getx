@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'home_controller.dart';
-import '../../utils/texts.dart';
+import '../../core/utils/texts.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
