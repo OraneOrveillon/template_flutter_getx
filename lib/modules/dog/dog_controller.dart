@@ -15,7 +15,7 @@ class DogController extends GetxController {
 
   void getApi() async {
     isLoading.value = true;
-    dog = await DogRepository.fetchCustomers();
+    dog = await DogRepository.fetchDog();
 
     isLoading.value = false;
   }
