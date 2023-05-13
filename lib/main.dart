@@ -9,6 +9,7 @@ import 'core/theme/themes.dart';
 void main() {
   runApp(
     GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       home: const HomePage(),
       initialBinding: HomeBinding(),
       getPages: pages,
