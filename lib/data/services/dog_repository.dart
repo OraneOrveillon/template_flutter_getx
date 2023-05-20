@@ -11,10 +11,8 @@ abstract class DogRepository {
 
     if (response.statusCode == 200) {
       return Right(Dog.fromJson(response.body));
-      // return Left(Exception(response.statusText));
     } else {
       return Left(Exception(response.statusText));
-      // return Right(Dog.fromJson(response.body));
     }
   }
 }
