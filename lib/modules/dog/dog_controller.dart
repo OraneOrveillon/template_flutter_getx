@@ -1,10 +1,12 @@
+import 'package:dartz/dartz.dart';
+import 'package:flutter_template/core/utils/errors.dart';
 import 'package:get/get.dart';
 
 import '../../data/models/dog_model.dart';
 import '../../data/services/dog_repository.dart';
 
 class DogController extends GetxController {
-  late Dog dog;
+  late Either<Exception, Dog> dog;
   final isLoading = false.obs;
 
   @override
@@ -18,5 +20,9 @@ class DogController extends GetxController {
     dog = await DogRepository.fetchDog();
 
     isLoading.value = false;
+
+    // dog.fold((l) {
+    //   return Get.snackbar(FetchErrors.fetchDog, l.toString());
+    // }, (r) => null);
   }
 }
