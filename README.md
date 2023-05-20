@@ -3,8 +3,9 @@
 I use this repo as a template for my personal Flutter projects. It is using a modular MVC architecture. Still improving. 🫡
 
 ## Packages
+### GetX
 
-This template only uses one core package, [get](https://pub.dev/packages/get), which enables :
+This template uses a core package, [get](https://pub.dev/packages/get), which enables :
 - State management
 - Dependency injection
 - Routing
@@ -19,6 +20,10 @@ But also other things that are not implemented here :
 
 It has the benefit to have a single lightweight solution for all these usages instead of having to add several packages. For example one for the state management, another for the HTTP client, another for the router, etc... 
 
+### Dartz
+
+[dartz](https://pub.dev/packages/dartz) enables better error handling, especially with API calls.
+
 ## Architecture overview
 
 ```yaml
@@ -27,8 +32,6 @@ It has the benefit to have a single lightweight solution for all these usages in
   - /components
   # Contains everything related to local and remote data
   - /core
-    # Error handling
-    - /errors
     - /theme
       # Color constants 
       - colors.dart
@@ -38,6 +41,8 @@ It has the benefit to have a single lightweight solution for all these usages in
     - /utils
       # Your enums if they exist
       - enums.dart
+      # Error messages
+      - errors.dart
       # Padding constants used on screens
       - paddings.dart
       # String constants used on screens
